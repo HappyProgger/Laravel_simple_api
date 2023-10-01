@@ -24,14 +24,15 @@ Setting up Laravel in the local environment with Docker using the LEMP stack tha
 
 1. Uncomment the PostgreSQL configuration inside the ```docker-compose.yml``` including: ```db``` and ```pgamdin```
 2. Copy ```.env.example``` to ```.env```
-3. Change ```DB_CONNECTION``` to ```pgsql```
-4. Change ```DB_PORT``` to ```5432```
-5. Open the ```pgAdmin``` on ```127.0.0.1:5050```
-6. Exec comand in root Laravel ```php artisan migrate ```
-7. Exec comand in root Laravel ```php artisan db:seed --class=BankSeeder ```
-8. Exec comand in root Laravel ```php artisan db:seed --class=ApplicationSeeder```
-9. Exec comand in root Laravel ```php artisan serve```
-10. Test all methods of Resources_API in adress "http://127.0.0.1:8000/api/application/"
+3. Change ```DB_HOST``` to ```localhost```
+4. Change ```DB_CONNECTION``` to ```pgsql```
+5. Change ```DB_PORT``` to ```5432```
+6. Open the ```pgAdmin``` on ```127.0.0.1:5050```
+7. Exec comand in root Laravel ```php artisan migrate ```
+8. Exec comand in root Laravel ```php artisan db:seed --class=BankSeeder ```
+9. Exec comand in root Laravel ```php artisan db:seed --class=ApplicationSeeder```
+10. Exec comand in root Laravel ```php artisan serve```
+11. Test all methods of Resources_API in adress "http://127.0.0.1:8000/api/application/"
 
 ## How to run Laravel Commands with Docker Compose
 
